@@ -1,0 +1,29 @@
+:root {
+  --brown: #5C4B28;
+  --bodyBack: #AFCBD1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--bodyBack);
+  color: var(--brown);
+}
+
+.left-pane {
+  padding: 20px;
+  text-align: right;
+}
+
+.right-pane {
+  padding: 20px;
+  padding-left: 0px;
+}
+
+.right-pane img {
+  width: 100%;
+}
