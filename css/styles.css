@@ -9,13 +9,26 @@
   font-family: 'Open Sans Condensed', sans-serif;;
 }
 
+html {
+  height: 100%
+}
+
 body {
+  height: 100%;
   background-color: var(--bodyBack);
   color: var(--brown);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 .main-div {
-  padding: 60px;
+  width: 97%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .left-pane {
