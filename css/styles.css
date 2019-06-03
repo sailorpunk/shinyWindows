@@ -16,6 +16,7 @@ body {
 
 .main-div {
   padding: 60px;
+  align-items: center;
 }
 
 .left-pane {
