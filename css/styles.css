@@ -20,6 +20,17 @@ body {
 
 .left-pane {
   text-align: right;
+  padding-right: 30px;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-right-color: var(--brown);
+}
+
+.right-pane {
+  padding-left: 30px;
+  border-left-style: solid;
+  border-left-width: thin;
+  border-left-color: var(--brown);
 }
 
 .right-pane img {
