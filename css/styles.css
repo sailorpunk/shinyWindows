@@ -6,7 +6,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;;
 }
 
 body {
@@ -14,16 +14,26 @@ body {
   color: var(--brown);
 }
 
-.left-pane {
-  padding: 20px;
-  text-align: right;
+.main-div {
+  padding: 60px;
 }
 
-.right-pane {
-  padding: 20px;
-  padding-left: 0px;
+.left-pane {
+  text-align: right;
 }
 
 .right-pane img {
   width: 100%;
+}
+
+.name h1 {
+  font-weight: bold;
+}
+
+.name h2 {
+  font-size: 30px;
+}
+
+.number {
+  font-size: 38px;
 }
