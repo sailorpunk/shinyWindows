@@ -25,19 +25,28 @@ html {
 .navbar a {
   float: left;
   display: block;
-  color: #b58067;
+  color: var(--navBar);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.navbar a:hover {
-  background: #ddd;
-  color: black;
+.dropbtn {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: none;
 }
 
-.dropdown {
-
+.dropbtn a {
+  float: left;
+  display: block;
+  color: var(--navBar);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 body {
@@ -51,13 +60,7 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/*
-.container{
-  padding: 5%;
-  background-color: var(--bodyBack);
 
-}
-*/
 .main-div {
   width: 97%;
   margin-top: 20px;
@@ -108,13 +111,10 @@ body {
 /* Mobile*/
 @media (min-width: 320px;) {
 
-  span.icon {display:inline-block;}
-  span.text {display:none;}
+
 
 }
 /*Tablet*/
 @media (min-width: 768px;) {
-  a span.icon {display:none;}
-  a span.text {display:inline-block;}
 
 }
