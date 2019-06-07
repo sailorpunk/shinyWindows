@@ -1,6 +1,7 @@
 :root {
   --brown: #5C4B28;
   --bodyBack: #AFCBD1;
+  --navBar: #b58067;
 }
 
 * {
@@ -11,6 +12,32 @@
 
 html {
   height: 100%
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #b58067;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.dropdown {
+
 }
 
 body {
@@ -24,7 +51,13 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
 }
+/*
+.container{
+  padding: 5%;
+  background-color: var(--bodyBack);
 
+}
+*/
 .main-div {
   width: 97%;
   margin-top: 20px;
@@ -35,9 +68,11 @@ body {
 .left-pane {
   text-align: right;
   padding-right: 30px;
+  /*
   border-right-style: solid;
   border-right-width: thin;
   border-right-color: var(--brown);
+  */
 }
 
 .right-pane {
@@ -61,4 +96,25 @@ body {
 
 .number {
   font-size: 38px;
+}
+
+.number a {
+  color: var(--brown);
+}
+
+.contact a {
+  color: var(--brown);
+}
+/* Mobile*/
+@media display only(min-width: 320px;) {
+
+  span.icon {display:inline-block;}
+  span.text {display:none;}
+
+}
+/*Tablet*/
+@media (min-width: 768px;) {
+  a span.icon {display:none;}
+  a span.text {display:inline-block;}
+
 }
