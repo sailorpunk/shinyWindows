@@ -106,7 +106,7 @@ body {
   color: var(--brown);
 }
 /* Mobile*/
-@media display only(min-width: 320px;) {
+@media (min-width: 320px;) {
 
   span.icon {display:inline-block;}
   span.text {display:none;}
