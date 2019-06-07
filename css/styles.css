@@ -98,17 +98,23 @@ body {
   font-size: 38px;
 }
 
+.number a {
+  color: var(--brown);
+}
+
+.contact a {
+  color: var(--brown);
+}
 /* Mobile*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .name h1 {
+@media display only(min-width: 320px;) {
 
-  }
-
+  span.icon {display:inline-block;}
+  span.text {display:none;}
 
 }
 /*Tablet*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  span.icon {display:none;}
-  span.text {display:inline-block;}
+@media (min-width: 768px;) {
+  a span.icon {display:none;}
+  a span.text {display:inline-block;}
 
 }
