@@ -29,6 +29,7 @@ body {
   width: 97%;
   margin-top: 20px;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .left-pane {
