@@ -1,7 +1,8 @@
 :root {
   --brown: #5C4B28;
   --bodyBack: #AFCBD1;
-  --navBar: #b58067;
+  --navBack: #333;
+  --navFont: #b58067;
 }
 
 * {
@@ -15,8 +16,10 @@ html {
 }
 
 .navbar {
+  background-color: var(--navBack);
+  font-size: 30px;
+  color: var(--navFont);
   overflow: hidden;
-  background-color: #333;
   position: fixed;
   top: 0;
   width: 100%;
@@ -25,19 +28,10 @@ html {
 .navbar a {
   float: left;
   display: block;
-  color: #b58067;
+  color: var(--navFont);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-
-.dropdown {
-
 }
 
 body {
@@ -51,13 +45,21 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/*
-.container{
-  padding: 5%;
-  background-color: var(--bodyBack);
 
+.about-content {
+text-align: center;
 }
-*/
+
+.about-name {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.about-info {
+  margin: 0 auto;
+  width: 50%;
+}
+
 .main-div {
   width: 97%;
   margin-top: 20px;
@@ -105,16 +107,21 @@ body {
 .contact a {
   color: var(--brown);
 }
-/* Mobile*/
-@media display only(min-width: 320px;) {
 
-  span.icon {display:inline-block;}
-  span.text {display:none;}
-
+@media (max-width: 1024px) {
+  .about-info {
+    width: 50%;
+  }
 }
-/*Tablet*/
-@media (min-width: 768px;) {
-  a span.icon {display:none;}
-  a span.text {display:inline-block;}
 
+/* Mobile*/
+@media (max-width: 768px) {
+  .about-info {
+    width: 80%;
+  }
+
+  .about-content {
+    margin: 0 auto;
+    width: 70%;
+  }
 }
