@@ -23,6 +23,7 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar a {
@@ -35,7 +36,6 @@ html {
 }
 
 body {
-  height: 100%;
   background-color: var(--bodyBack);
   color: var(--brown);
   display: -webkit-flex;
@@ -44,6 +44,7 @@ body {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+  margin-top: 120px;
 }
 
 .about-content {
@@ -75,17 +76,6 @@ text-align: center;
   border-right-color: var(--brown);
 }
 
-.right-pane {
-  padding-left: 30px;
-  /* border-left-style: solid;
-  border-left-width: thin;
-  border-left-color: var(--brown); */
-}
-
-/* .right-pane img {
-  width: 100%;
-} */
-
 .name h1 {
   font-weight: bold;
 }
@@ -106,6 +96,14 @@ text-align: center;
   color: var(--brown);
 }
 
+.contact h4 {
+  white-space: nowrap;
+}
+
+.right-pane {
+  max-width: 400px;
+}
+
 @media (max-width: 1024px) {
   .about-info {
     width: 50%;
@@ -117,9 +115,29 @@ text-align: center;
   .about-info {
     width: 80%;
   }
+  .left-pane {
+    border: none;
+    text-align: left;
+    padding-right: 0px;
+  }
+
+  .name h1 {
+    font-size: 32px
+  }
+
+  .name h2 {
+    font-size: 25px;
+  }
+
+  .container {
+  margin-left: 30px;
+  }
 
   .about-content {
     margin: 0 auto;
     width: 70%;
   }
+
+  .phone {
+    display: none;
 }
