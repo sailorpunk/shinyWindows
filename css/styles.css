@@ -111,10 +111,12 @@ text-align: center;
 }
 
 /* Mobile*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+
   .about-info {
     width: 80%;
   }
+
   .left-pane {
     border: none;
     text-align: left;
@@ -122,7 +124,7 @@ text-align: center;
   }
 
   .name h1 {
-    font-size: 32px
+    font-size: 30px
   }
 
   .name h2 {
