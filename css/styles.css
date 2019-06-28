@@ -124,7 +124,7 @@ body {
 }
 
 .privacy {
-  margin: 120px 20px 60px 20px;
+  margin: 120px 60px 60px 60px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -200,4 +200,8 @@ body {
   .about-body {
     margin-top: 100px;
     padding-bottom: 60px;
+  }
+
+  .privacy {
+    margin: 120px 20px 60px 20px;
   }
