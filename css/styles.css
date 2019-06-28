@@ -8,11 +8,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Open Sans Condensed', sans-serif;;
-}
-
-html {
-  height: 100%
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
@@ -26,6 +22,11 @@ body {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+}
+
+p {
+  letter-spacing: 1px;
+  font-weight: 510;
 }
 
 .content {
@@ -123,6 +124,10 @@ body {
   padding-top: 5px;
 }
 
+.footer p {
+  margin-bottom: 0px;
+}
+
 .privacy {
   margin: 120px 160px 60px 160px;
 }
@@ -201,3 +206,4 @@ body {
     margin-top: 100px;
     padding-bottom: 60px;
   }
+}
