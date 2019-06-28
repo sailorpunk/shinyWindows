@@ -15,6 +15,23 @@ html {
   height: 100%
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--bodyBack);
+  color: var(--brown);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.content {
+  padding-bottom: 40px;
+}
+
 .navbar {
   background-color: var(--navBack);
   font-size: 30px;
@@ -32,38 +49,11 @@ html {
   color: var(--navFont);
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
-}
-
-body {
-  background-color: var(--bodyBack);
-  color: var(--brown);
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  margin-top: 120px;
-}
-
-.about-content {
-text-align: center;
-}
-
-.about-name {
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.about-info {
-  margin: 0 auto;
-  width: 50%;
 }
 
 .main-div {
-  width: 97%;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 120px;
   margin-bottom: 20px;
   align-items: center;
 }
@@ -98,29 +88,71 @@ text-align: center;
 
 .contact h4 {
   white-space: nowrap;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 .right-pane {
   max-width: 400px;
 }
 
-@media (max-width: 1024px) {
-  .about-info {
-    width: 50%;
+.about-body {
+  margin-top: 100px;
+  padding-bottom: 60px;
+}
+
+
+.about-content {
+text-align: center;
+}
+
+.about-name {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.about-info {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--navBack);
+  font-size: 20px;
+  color: var(--navFont);
+  padding-top: 5px;
+}
+
+.privacy {
+  margin: 120px 20px 60px 20px;
+}
+
+@media only screen and (max-width: 991px) {
+
+  .left-pane {
+    padding-right: 20px;
+  }
+
+  .main-div {
+    width: auto;
   }
 }
 
-/* Mobile*/
-@media only screen and (max-width: 768px) {
-
-  .about-info {
-    width: 80%;
-  }
+@media only screen and (max-width: 767px) {
 
   .left-pane {
     border: none;
     text-align: left;
     padding-right: 0px;
+  }
+
+  .main-div {
+    width: auto;
   }
 
   .name h1 {
@@ -131,15 +163,41 @@ text-align: center;
     font-size: 25px;
   }
 
-  .container {
-  margin-left: 30px;
+}
+
+@media only screen and (max-width: 575px) {
+
+  .content {
+    margin-top: 10px;
+  }
+
+  .about-info {
+    width: 80%;
+  }
+
+  .contact h4 {
+    font-size: 30px;
+  }
+
+  .left-pane {
+    border: none;
+    text-align: left;
+    margin: 0px 0px 0px 20px;
+  }
+
+  .right-pane {
+    margin: 0px 20px 0px 20px;
+
+  }
+  .name h1 {
+    font-size: 30px
+  }
+
+  .name h2 {
+    font-size: 25px;
   }
 
   .about-content {
     margin: 0 auto;
     width: 70%;
   }
-
-  .phone {
-    display: none;
-}
