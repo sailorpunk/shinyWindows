@@ -1,10 +1,9 @@
 $(document).ready(function() {
     const copyToClipboard = _ => {
-        let temp = $('<input>');
+        let temp = $('<input id="huh">');
         $('body').append(temp);
-        temp.value = 'shinywindowz@gmail.com';
-        temp.select();
-        console.log(temp);
+        $('#huh').val('shinywindowz@gmail.com');
+        $('#huh').select();
         document.execCommand('copy');
         temp.remove();
         alert('Email address copied to clipboard.')

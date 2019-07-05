@@ -24,7 +24,7 @@ body {
   justify-content: center;
 }
 
-p {
+.left-pane p {
   letter-spacing: 1px;
   font-weight: 510;
 }
@@ -102,7 +102,7 @@ p {
   text-align: center;
 }
 
-.about-name {
+.about-name h2 {
   font-size: 60px;
   font-weight: bold;
 }
