@@ -138,7 +138,7 @@ body {
   margin: 120px 160px 60px 160px;
 }
 
-@media only screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
 
   .left-pane {
     padding-right: 20px;
@@ -149,7 +149,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
   .name h1 {
     font-size: 60px
@@ -177,7 +177,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 575px) {
+@media screen and (max-width: 575px) {
 
   .content {
     margin-top: 10px;
